@@ -5,28 +5,33 @@ share: true
 
 1) Скачать и установить Git https://git-scm.com/download/win
 2) Зайти в любую папку, где будет храниться документация
-3) В адресной строке ввести `cmd` ![[cmd.png]]
+3) В адресной строке ввести `cmd` ![[cmd.png|cmd.png]]
 4) Откроется консоль, где нужно ввести
 ```
 git clone https://github.com/Plusmedia/doc.git
 ```
-![[git_clone.png]]
+![[git_clone.png|git_clone.png]]
 5) Скачать и установить Obsidian https://obsidian.md/
 6) Запустить Obsidian и выбрать вариант [[Obsidian_open_folder.png|Open folder as vault]]
-7) Указать папку куда был склонирована документация [[Obsidian_folder.png]]
-8) Открыть настройки [[Obsidian_setting_button.png]]
-9) Перейти в Community Plugins и включить их [[Obsidian_community_plugins_turn_on.png]]
-10) Перейти в список через кнопку Browse [[Obsidian_community_plugins_browse.png]]
+7) Указать папку куда был склонирована документация [[Obsidian_folder.png|Obsidian_folder.png]]
+8) Открыть настройки [[Obsidian_setting_button.png|Obsidian_setting_button.png]]
+9) Перейти в Community Plugins и включить их [[Obsidian_community_plugins_turn_on.png|Obsidian_community_plugins_turn_on.png]]
+10) Перейти в список через кнопку Browse [[Obsidian_community_plugins_browse.png|Obsidian_community_plugins_browse.png]]
 11) Найти плагин [[Obsidian_git.png|Git]]
 12) [[Obsidian_git_install.png|Установить плагин Git]]
 13) [[Obsidian_git_enable.png|Включить плагин Git]]
 14) В настройках плагина можно включить Pull updates on startup
-15) Отрыть ввод команд ![[Obsidian_open_command_palette.png]]
-16) Ввести Git pull [[git_pull.png]] чтобы убедиться, что [[git_pull_ok.png|все работает]]
-17) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png]]
-18) Установить его [[Obsidian_Github_Publisher_install.png]]
-19) Включить плагин [[Obsidian_Github_Publisher_enable.png]]
-20) Перейти в настройки плагина и импортировать настройки [[Obsidian_Github_Publisher_import_settings.png]]
+15) Отрыть ввод команд ![[Obsidian_open_command_palette.png|Obsidian_open_command_palette.png]]
+16) Ввести Git pull [[git_pull.png|git_pull.png]] чтобы убедиться, что [[git_pull_ok.png|все работает]]
+17) После внесения изменений в документацию нужно вводить команду [[git_commit.png|Git commit all changes]]
+18) Чтобы залить документацию на сервер нужно ввести [[git_push.png|Git push]]
+19) Все настройки Obsidian индивидуальные, поэтому они не залиты в репозиторий. Для всех команд описанных выше можно настроить хоткеи по желанию ![[Obsidian_hotkeys.png|Obsidian_hotkeys.png]]
+
+### Github Publisher (альтернативная заливка файлов, сейчас не используется)
+1) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png|Obsidian_Github_Publisher.png]]
+2) Установить его [[Obsidian_Github_Publisher_install.png|Obsidian_Github_Publisher_install.png]]
+3) Включить плагин [[Obsidian_Github_Publisher_enable.png|Obsidian_Github_Publisher_enable.png]]
+4) Перейти в настройки плагина и импортировать настройки [[Obsidian_Github_Publisher_import_settings.png|Obsidian_Github_Publisher_import_settings.png]]
 ```{
   "github": {
     "branch": "main",
@@ -114,7 +119,18 @@ git clone https://github.com/Plusmedia/doc.git
   }
 }
 ```
-21) Самостоятельно ввести настройки [[Obsidian_Github_Publisher_install_github_config.png|GitHub config]]:
+5) Самостоятельно ввести настройки [[Obsidian_Github_Publisher_install_github_config.png|GitHub config]]:
     GitHub username: plusmedia
     Repository name: doc
     GitHub token: [Нужно сгенерировать на GitHub](https://github.com/settings/tokens/new?scopes=repo,workflow)
+
+## Структура папок
+
+- docs - где хранятся все заметки
+  - assets - место для файлов
+  - hidden - заметки отсюда не выводятся на сайт
+  - notes и любые другие папки - меню на сайте
+  - файл index - этот файл, главная сайта
+  - любые другие файлы - меню на сайте
+- overrides - служебная папка для веба
+- README документ для github
