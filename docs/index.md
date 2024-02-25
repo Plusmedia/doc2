@@ -23,10 +23,15 @@ git clone https://github.com/Plusmedia/doc.git
 14) В настройках плагина можно включить Pull updates on startup
 15) Отрыть ввод команд ![[Obsidian_open_command_palette.png]]
 16) Ввести Git pull [[git_pull.png]] чтобы убедиться, что [[git_pull_ok.png|все работает]]
-17) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png]]
-18) Установить его [[Obsidian_Github_Publisher_install.png]]
-19) Включить плагин [[Obsidian_Github_Publisher_enable.png]]
-20) Перейти в настройки плагина и импортировать настройки [[Obsidian_Github_Publisher_import_settings.png]]
+17) После внесения изменений в документацию нужно вводить команду [[git_commit.png|Git commit all changes]]
+18) Чтобы залить документацию на сервер нужно ввести [[git_push.png|Git push]]
+19) Все настройки Obsidian индивидуальные, поэтому они не залиты в репозиторий. Для всех команд описанных выше можно настроить хоткеи по желанию ![[Obsidian_hotkeys.png]]
+
+### Github Publisher (альтернативная заливка файлов, сейчас не используется)
+1) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png]]
+2) Установить его [[Obsidian_Github_Publisher_install.png]]
+3) Включить плагин [[Obsidian_Github_Publisher_enable.png]]
+4) Перейти в настройки плагина и импортировать настройки [[Obsidian_Github_Publisher_import_settings.png]]
 ```{
   "github": {
     "branch": "main",
@@ -114,7 +119,18 @@ git clone https://github.com/Plusmedia/doc.git
   }
 }
 ```
-21) Самостоятельно ввести настройки [[Obsidian_Github_Publisher_install_github_config.png|GitHub config]]:
+5) Самостоятельно ввести настройки [[Obsidian_Github_Publisher_install_github_config.png|GitHub config]]:
     GitHub username: plusmedia
     Repository name: doc
     GitHub token: [Нужно сгенерировать на GitHub](https://github.com/settings/tokens/new?scopes=repo,workflow)
+
+## Структура папок
+
+- docs - где хранятся все заметки
+  - assets - место для файлов
+  - hidden - заметки отсюда не выводятся на сайт
+  - notes и любые другие папки - меню на сайте
+  - файл index - этот файл, главная сайта
+  - любые другие файлы - меню на сайте
+- overrides - служебная папка для веба
+- README документ для github
