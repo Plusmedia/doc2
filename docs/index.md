@@ -109,3 +109,5 @@ share: true
 12) Отрыть ввод команд [[Obsidian_open_command_palette.png|Obsidian_open_command_palette.png]]
 13) Выбрать команду [[Obsidian_git_clone.png|Git: Clone an existing remote repo]]
 14) Ввести URL https://github.com/Plusmedia/doc.git
+
+![[Obsidian_Github_Publisher_enable.png|Obsidian_Github_Publisher_enable.png]]
