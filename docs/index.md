@@ -22,7 +22,7 @@ git clone https://github.com/Plusmedia/doc.git
 13) [[Obsidian_git_enable.png|Включить плагин Git]]
 14) В настройках плагина можно включить Pull updates on startup
 15) Отрыть ввод команд ![[Obsidian_open_command_palette.png]]
-16) Ввести Git pull [[git_pull.png]] чтобы убедиться, что [[git_pull_ok.png|все работает]]
+16) Ввести [[git_pull.png|Git pull]] чтобы убедиться, что [[git_pull_ok.png|все работает]]
 17) После внесения изменений в документацию нужно вводить команду [[git_commit.png|Git commit all changes]]
 18) Чтобы залить документацию на сервер нужно ввести [[git_push.png|Git push]]
 19) Все настройки Obsidian индивидуальные, поэтому они не залиты в репозиторий. Для всех команд описанных выше можно настроить хоткеи по желанию ![[Obsidian_hotkeys.png]]
