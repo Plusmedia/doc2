@@ -4,15 +4,29 @@ share: true
 ## Установка и настройка локального Obsidian
 
 1) Скачать и установить Git https://git-scm.com/download/win
-2) Скачать и установить Obsidian https://obsidian.md/
-3) Создать локальный Vault в любом месте на своем компьютере
-4) Открыть настройки [[Obsidian_setting_button.png|Obsidian_setting_button.png]]
-5) Перейти в Community Plugins и включить их [[Obsidian_community_plugins_turn_on.png|Obsidian_community_plugins_turn_on.png]]
-6) Перейти в список через кнопку Browse [[Obsidian_community_plugins_browse.png|Obsidian_community_plugins_browse.png]]
-7) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png|Obsidian_Github_Publisher.png]]
-8) Установить его [[Obsidian_Github_Publisher_install.png|Obsidian_Github_Publisher_install.png]]
-9) Включить плагин [[Obsidian_Github_Publisher_enable.png|Obsidian_Github_Publisher_enable.png]]
-10) Перейти в настройки плагина и импортировать настройки [[Obsidian_Github_Publisher_import_settings.png|Obsidian_Github_Publisher_import_settings.png]]
+2) Зайти в любую папку, где будет храниться документация
+3) В адресной строке ввести `cmd` ![[cmd.png]]
+4) Откроется консоль, где нужно ввести
+```
+git clone https://github.com/Plusmedia/doc.git
+```
+![[git_clone.png]]
+5) Скачать и установить Obsidian https://obsidian.md/
+6) Запустить Obsidian и выбрать вариант [[Obsidian_open_folder.png|Open folder as vault]]
+7) Указать папку куда был склонирована документация [[Obsidian_folder.png]]
+8) Открыть настройки [[Obsidian_setting_button.png]]
+9) Перейти в Community Plugins и включить их [[Obsidian_community_plugins_turn_on.png]]
+10) Перейти в список через кнопку Browse [[Obsidian_community_plugins_browse.png]]
+11) Найти плагин [[Obsidian_git.png|Git]]
+12) [[Obsidian_git_install.png|Установить плагин Git]]
+13) [[Obsidian_git_enable.png|Включить плагин Git]]
+14) В настройках плагина можно включить Pull updates on startup
+15) Отрыть ввод команд ![[Obsidian_open_command_palette.png]]
+16) Ввести Git pull [[git_pull.png]] чтобы убедиться, что [[git_pull_ok.png|все работает]]
+17) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png]]
+18) Установить его [[Obsidian_Github_Publisher_install.png]]
+19) Включить плагин [[Obsidian_Github_Publisher_enable.png]]
+20) Перейти в настройки плагина и импортировать настройки [[Obsidian_Github_Publisher_import_settings.png]]
 ```{
   "github": {
     "branch": "main",
@@ -100,14 +114,7 @@ share: true
   }
 }
 ```
-10) Самостоятельно ввести настройки [[Obsidian_Github_Publisher_install_github_config.png|GitHub config]]:
+21) Самостоятельно ввести настройки [[Obsidian_Github_Publisher_install_github_config.png|GitHub config]]:
     GitHub username: plusmedia
     Repository name: doc
     GitHub token: [Нужно сгенерировать на GitHub](https://github.com/settings/tokens/new?scopes=repo,workflow)
-
-11) Таким же образом найти, установить и включить плагин [[Obsidian_Git.png|Git]]
-12) Отрыть ввод команд [[Obsidian_open_command_palette.png|Obsidian_open_command_palette.png]]
-13) Выбрать команду [[Obsidian_git_clone.png|Git: Clone an existing remote repo]]
-14) Ввести URL https://github.com/Plusmedia/doc.git
-
-![[Obsidian_Github_Publisher_enable.png|Obsidian_Github_Publisher_enable.png]]
