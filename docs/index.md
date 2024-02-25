@@ -24,8 +24,9 @@ git clone https://github.com/Plusmedia/doc.git
 15) Отрыть ввод команд ![[Obsidian_open_command_palette.png]]
 16) Ввести [[git_pull.png|Git pull]] чтобы убедиться, что [[git_pull_ok.png|все работает]]
 17) После внесения изменений в документацию нужно вводить команду [[git_commit.png|Git commit all changes]]
-18) Чтобы залить документацию на сервер нужно ввести [[git_push.png|Git push]]
+18) Чтобы залить документацию на сервер нужно ввести [[git_push.png|Git push]] [[docs/assets/img/Obsidian/git_push.png|Git push]]
 19) Все настройки Obsidian индивидуальные, поэтому они не залиты в репозиторий. Для всех команд описанных выше можно настроить хоткеи по желанию ![[Obsidian_hotkeys.png]]
+20) Обязательная настройка Files and links -> New link format - Absolute path in vault ![[docs/assets/img/Obsidian/Obsidian_Absolute_path_in_vault.png]]
 
 ### Github Publisher (альтернативная заливка файлов, сейчас не используется)
 1) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png]]
@@ -134,3 +135,6 @@ git clone https://github.com/Plusmedia/doc.git
   - любые другие файлы - меню на сайте
 - overrides - служебная папка для веба
 - README документ для github
+
+## Markdown
+https://www.markdownguide.org/basic-syntax/
