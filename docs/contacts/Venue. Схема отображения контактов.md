@@ -1,5 +1,7 @@
 ---
-share: true
+tags:
+  - contacts
+  - venue
 ---
 ## Лог изменений
 | № | Изменение | Автор | Дата |
@@ -71,8 +73,21 @@ share: true
 ## API
 |Метод|Пример вызова|Платформа|
 |---|---|---|
-|…/v3/venuecard|https://documenter.getpostman.com/view/16718306/2sA2rCTgRm|Mobile, Desktop|
+|…/v3/venuecard|[v3/venuecard](https://documenter.getpostman.com/view/16718306/2sA2rCTgRm#e5578a3c-8b77-4a58-9a8a-9118594ce843)|Mobile, Desktop|
 |…/v3/venue/venue_id|[https://api.gorko.ru/api/v3/venue/235145?entity[languageId]=1](https://api.gorko.ru/api/v3/venue/235145?entity%5BlanguageId%5D=1)|Mobile, Desktop|
+
+В выдаче апи, в каждой entity всегда есть атрибут со схемой контактов
+```json
+v3
+contactSchema: {
+    "main_method_desktop": "contacts",
+    "main_method_mobile": "call",
+    "is_show_phone": true,
+    "is_show_messengers": false,
+    "is_show_contacts": false,
+    "add_contacts": null
+}
+```
 
 ## Parameters
 |Параметр|Описание|Тип|
