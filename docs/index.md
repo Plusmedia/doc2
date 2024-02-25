@@ -29,7 +29,8 @@ git clone https://github.com/Plusmedia/doc.git
 2) Установить его [[Obsidian_Github_Publisher_install.png]]
 3) Включить плагин [[Obsidian_Github_Publisher_enable.png]]
 4) Перейти в настройки плагина и импортировать настройки [[Obsidian_Github_Publisher_import_settings.png]]
-```{
+```json
+{
   "github": {
     "branch": "main",
     "automaticallyMergePR": true,
