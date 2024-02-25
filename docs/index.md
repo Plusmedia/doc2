@@ -1,4 +1,5 @@
-## Установка и настройка локального Obsidian
+## Как вести документацию
+### Установка и настройка локального Obsidian
 
 1) Скачать и установить Git https://git-scm.com/download/win
 2) Зайти в любую папку, где будет храниться документация
@@ -24,7 +25,7 @@ git clone https://github.com/Plusmedia/doc.git
 18) Чтобы залить документацию на сервер нужно ввести [[git_push.png|Git push]]
 19) Все настройки Obsidian индивидуальные, поэтому они не залиты в репозиторий. Для всех команд описанных выше можно настроить хоткеи по желанию ![[Obsidian_hotkeys.png]]
 
-### Github Publisher (альтернативная заливка файлов, сейчас не используется)
+#### Github Publisher (альтернативная заливка файлов, сейчас не используется)
 1) Найти плагин Github Publisher [[Obsidian_Github_Publisher.png]]
 2) Установить его [[Obsidian_Github_Publisher_install.png]]
 3) Включить плагин [[Obsidian_Github_Publisher_enable.png]]
@@ -127,6 +128,9 @@ git clone https://github.com/Plusmedia/doc.git
 share: true
 ---
 ```
+
+### Альтернативный вариант для простых статей
+Просто создать .md файл через веб версию github
 
 ## Структура папок
 
